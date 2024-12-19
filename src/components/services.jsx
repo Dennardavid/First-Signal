@@ -49,7 +49,7 @@ export default function Services() {
 
       <div className="text-center p-20">
         <h3 className="font-semibold text-3xl w-[650px] leading-relaxed">
-          Block 12 Road 26, Federal Housing Estate, Woji Port Harcourt Rivers
+          Block 12, Road 26, Federal Housing Estate, Woji Port Harcourt Rivers
           State
         </h3>
         <div className="flex items-center justify-center gap-5 text-lg mt-10">
