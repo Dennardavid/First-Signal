@@ -46,18 +46,6 @@ export default function Services() {
           </div>
         </div>
       ))}
-
-      <div className="text-center p-20">
-        <h3 className="font-semibold text-3xl w-[650px] leading-relaxed">
-          Block 12, Road 26, Federal Housing Estate, Woji Port Harcourt Rivers
-          State
-        </h3>
-        <div className="flex items-center justify-center gap-5 text-lg mt-10">
-          <p>+234(0)703 6888 949</p>
-          <p>+234(0)705 7201 140</p>
-          <p>+234(0)812 8959 535</p>
-        </div>
-      </div>
     </section>
   );
 }
