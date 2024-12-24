@@ -50,64 +50,82 @@ export default function CompanyValues() {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto p-8">
-      <div className="flex justify-center space-x-6">
+    <div className="w-full max-w-7xl mx-auto p-4 lg:p-8">
+      <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-6 space-y-4 lg:space-y-0">
         {values.map((value) => (
           <div key={value.title} className="flex group">
             <button
               onClick={() => handleValueClick(value.title)}
-              className="flex items-center transition-all duration-300 rounded-lg relative h-[500px]"
+              className="w-full lg:w-auto flex flex-col lg:flex-row items-center transition-all duration-300 rounded-lg relative lg:h-[500px]"
               style={{ backgroundColor: value.bgColor }}
             >
-              {value.direction === "right" ? (
-                <>
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out
-                    ${
-                      activeValue === value.title
-                        ? "w-[600px] opacity-100"
-                        : "w-0 opacity-0"
-                    }`}
-                  >
-                    <div className="p-8 h-full flex items-center text-xl text-right">
-                      {value.description}
+              {/* Mobile Layout */}
+              <div className="lg:hidden flex flex-col w-full text-center">
+                <div className="p-4 font-bold text-xl">{value.title}</div>
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-in-out w-full
+                  ${
+                    activeValue === value.title
+                      ? "max-h-[200px] opacity-100 p-4"
+                      : "max-h-0 opacity-0 p-0"
+                  }`}
+                >
+                  <div className="text-sm xl:text-lg">{value.description}</div>
+                </div>
+              </div>
+
+              {/* Desktop Layout */}
+              <div className="hidden lg:flex">
+                {value.direction === "right" ? (
+                  <>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out
+                      ${
+                        activeValue === value.title
+                          ? "w-[600px] opacity-100"
+                          : "w-0 opacity-0"
+                      }`}
+                    >
+                      <div className="p-8 h-full flex items-center text-xl text-right">
+                        {value.description}
+                      </div>
                     </div>
-                  </div>
-                  <div
-                    className="p-8 font-bold text-4xl"
-                    style={{
-                      writingMode: "vertical-rl",
-                      textOrientation: "mixed",
-                    }}
-                  >
-                    {value.title}
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div
-                    className="p-8 font-bold text-4xl"
-                    style={{
-                      writingMode: "vertical-rl",
-                      textOrientation: "mixed",
-                    }}
-                  >
-                    {value.title}
-                  </div>
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out
-                    ${
-                      activeValue === value.title
-                        ? "w-[600px] opacity-100"
-                        : "w-0 opacity-0"
-                    }`}
-                  >
-                    <div className="p-8 h-full flex items-center text-left text-xl">
-                      {value.description}
+                    <div
+                      className="p-8 font-bold text-4xl"
+                      style={{
+                        writingMode: "vertical-rl",
+                        textOrientation: "mixed",
+                      }}
+                    >
+                      {value.title}
                     </div>
-                  </div>
-                </>
-              )}
+                  </>
+                ) : (
+                  <>
+                    <div
+                      className="p-8 font-bold text-4xl"
+                      style={{
+                        writingMode: "vertical-rl",
+                        textOrientation: "mixed",
+                      }}
+                    >
+                      {value.title}
+                    </div>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out
+                      ${
+                        activeValue === value.title
+                          ? "w-[600px] opacity-100"
+                          : "w-0 opacity-0"
+                      }`}
+                    >
+                      <div className="p-8 h-full flex items-center text-left text-xl">
+                        {value.description}
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
             </button>
           </div>
         ))}

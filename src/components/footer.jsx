@@ -30,7 +30,7 @@ export default function Footer() {
           </button>
         </div>
       </div>
-      <p className="text-xs text-center xl:text-base bg-[#fdf0d5] text-[#000000a4]">
+      <p className="text-xs text-center xl:text-base bg-[#fdf0d5] py-1 text-[#000000a4]">
         © 2025 First Signal Global Services Limited. All rights reserved
       </p>
     </footer>
