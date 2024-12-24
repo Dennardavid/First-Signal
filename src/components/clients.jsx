@@ -2,17 +2,17 @@
 
 export default function Clients() {
   const clients = [
-    { src: "/dover.png", alt: "Dover", className: "h-24" },
-    { src: "/ndu.png", alt: "NDU", className: "h-24" },
-    { src: "/spie.png", alt: "SPIE", className: "h-24" },
-    { src: "/ks-energy.png", alt: "KS Energy", className: "h-24" },
-    { src: "/merald.png", alt: "Merald", className: "h-24" },
-    { src: "/tadoben.png", alt: "Tadoben", className: "h-24" },
+    { src: "/dover.png", alt: "Dover", className: "h-10 xl:h-24" },
+    { src: "/ndu.png", alt: "NDU", className: "h-10 xl:h-24" },
+    { src: "/spie.png", alt: "SPIE", className: "h-10 xl:h-24" },
+    { src: "/ks-energy.png", alt: "KS Energy", className: "h-10 xl:h-24" },
+    { src: "/merald.png", alt: "Merald", className: "h-10 xl:h-24" },
+    { src: "/tadoben.png", alt: "Tadoben", className: "h-10 xl:h-24" },
   ];
 
   return (
-    <section className="my-10 flex flex-col items-center justify-center">
-      <h2 className="text-4xl font-bold text-center mb-6">Our Clients</h2>
+    <section className="my-5 xl:my-10 flex flex-col items-center justify-center">
+      <h2 className="text-2xl xl:text-4xl font-bold text-center mb-4 xl:mb-6">Our Clients</h2>
       <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
         <div className="flex animate-slide">
           {/* First set of images */}

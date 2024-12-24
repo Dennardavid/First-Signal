@@ -7,9 +7,11 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      screens: {
+        md: "768px" /* Tablet */,
+        lg: "1024px" /* Laptop */,
+        xl: "1232px" /* Large Screens */,
+        "2xl": "1390px" /*Very Large Screens */,
       },
     },
   },

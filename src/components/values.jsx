@@ -3,36 +3,43 @@
 import { useState } from "react";
 
 export default function CompanyValues() {
-  const [activeValue, setActiveValue] = useState("Innovation");
+  const [activeValue, setActiveValue] = useState("Customer-Centricity");
 
   const values = [
     {
-      title: "Innovation",
+      title: "Customer-Centricity",
       description:
-        "We embrace new ideas and technologies to push boundaries and create breakthrough solutions.",
+        "Our clients are at the center of all we do. We endeavor to exceed their expectations with each project.",
       direction: "left",
       bgColor: "#FDF0D5",
     },
     {
       title: "Integrity",
       description:
-        "We conduct business with honesty, transparency, and ethical behavior in all our interactions.",
+        "We operate with transparency and adhere to the highest standards of honesty and ethical behavior.",
       direction: "left",
       bgColor: "#5FC294",
     },
     {
       title: "Collaboration",
       description:
-        "We work together across teams and disciplines to achieve shared goals and foster mutual growth.",
+        "We believe in the power of teamwork, and work closely with our clients to achieve shared success.",
       direction: "right",
       bgColor: "#FDF0D5",
     },
     {
       title: "Excellence",
       description:
-        "We strive for the highest standards in everything we do, constantly improving and delivering quality.",
+        "We are committed to delivering high-quality services and products that meet the evolving needs of our clients.",
       direction: "right",
       bgColor: "#5FC294",
+    },
+    {
+      title: "Innovation",
+      description:
+        "We embrace the latest technologies and methodologies to deliver state of the art solutions.",
+      direction: "right",
+      bgColor: "#FDF0D5",
     },
   ];
 
