@@ -32,7 +32,7 @@ export default function Services() {
               <p className="text-[#000033] xl:w-[350px] text-sm xl:text-lg">
                 {service.description}
               </p>
-              <button className="text-white bg-[#335CAD] mx-auto xl:mx-0 rounded-md w-[200px] py-2 text-sm xl:text-lg">
+              <button className="text-white bg-[#335CAD] mx-auto xl:mx-0 rounded-md w-[200px] py-2 text-sm xl:text-lg hover:bg-[#2a4b8d] transition-colors">
                 Book Service
               </button>
             </div>

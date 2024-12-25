@@ -47,24 +47,28 @@ export default function Products() {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold text-center mb-12">
+    <section className="container mx-auto px-4 py-5 xl:py-12">
+      <h1 className="text-2xl xl:text-4xl font-bold text-center mb-3 xl:mb-12">
         Services we Offer
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-8">
         {products.map((product, index) => (
           <div
             key={index}
-            className={`${product.color} rounded-xl p-6 flex flex-col md:flex-row items-center gap-6`}
+            className={`${product.color} rounded-xl p-4 xl:p-6 flex flex-col md:flex-row items-center gap-4 xl:gap-6`}
           >
-            <div className="flex-1 space-y-4">
-              <h2 className="text-3xl font-bold">{product.name}</h2>
-              <p className="text-lg">{product.description}</p>
-              <button className="text-white bg-[#335CAD] rounded-md w-[200px] py-2 text-lg hover:bg-[#2a4b8d] transition-colors">
+            <div className="flex-1 flex flex-col items-center xl:items-start space-y-2 xl:space-y-4">
+              <h2 className="text-xl xl:text-3xl text-center xl:text-left font-bold">
+                {product.name}
+              </h2>
+              <p className="text-sm xl:text-lg text-center xl:text-left">
+                {product.description}
+              </p>
+              <button className="text-white bg-[#335CAD] rounded-md w-[200px] py-2 text-sm xl:text-lg hover:bg-[#2a4b8d] transition-colors">
                 Contact Us
               </button>
             </div>
-            <div className="w-full md:w-[300px] h-[250px]">
+            <div className="w-full md:w-[300px] h-[200px] xl:h-[250px]">
               <img
                 src={product.image}
                 alt={product.name}
