@@ -1,13 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import { IoMenuSharp, IoCloseSharp } from "react-icons/io5";
 import gsap from "gsap";
 import { usePathname } from "next/navigation";
 
-export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+export default function Navbar({ menuOpen, setMenuOpen }) {
   const navbarRef = useRef(null);
   const navItemsRef = useRef([]);
   const pathname = usePathname();
@@ -111,8 +110,7 @@ export default function Navbar() {
         {menuOpen && (
           <div
             ref={navbarRef}
-            id="mobile-menu"
-            className="flex flex-col items-center justify-center w-[80%] h-[55%] z-50 fixed top-0 right-[-100%] lg:hidden bg-[#FDF0D5] backdrop-filter bg-opacity-95 backdrop-blur-md"
+            className="flex flex-col items-center justify-center w-[80%] h-[100dvh] z-50 fixed top-0 right-[-100%] lg:hidden bg-[#FDF0D5] backdrop-filter bg-opacity-95 backdrop-blur-md"
           >
             <ul className="flex flex-col items-center gap-6">
               {URLs.map((url, index) => (
@@ -149,7 +147,7 @@ export default function Navbar() {
       {/* Overlay */}
       {menuOpen && (
         <div
-          className="fixed inset-0 z-40 bg-black/20 lg:hidden"
+          className="fixed inset-0 z-40 bg-black/20 lg:hidden h-screen w-full overflow-hidden"
           onClick={handleOverlayClick}
         ></div>
       )}
