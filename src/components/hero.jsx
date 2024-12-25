@@ -4,7 +4,7 @@ export default function Hero() {
       <h1 className="text-2xl w-[300px] md:text-5xl xl:text-7xl font-bold xl:w-[850px]">
         We are First Signal Global Services limited
       </h1>
-      <p className="text-sm w-[400px] xl:text-lg xl:w-[750px] mt-4">
+      <p className="text-sm w-[350px] xl:text-lg xl:w-[750px] mt-4">
         An ICT company that transforms your business by Improving Communication,
         Connecting Networks, Simplifying Work, and Driving Growth
       </p>
