@@ -119,7 +119,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
                   ref={(el) => (navItemsRef.current[index] = el)}
                   key={index}
                 >
-                  <li className="group text-[#000000a4] text-xl">
+                  <li className="group text-[#000000a4] text-sm xl:text-xl">
                     {url.label}
                     <div
                       className={`bg-[#000000a4] h-[2px] ${
