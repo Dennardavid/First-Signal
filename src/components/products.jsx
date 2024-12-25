@@ -7,14 +7,14 @@ export default function Products() {
       description:
         "Designing and impelementing fiber optics network to support and make clients buinsess flexible and efficient",
       image: "/fibreoptics.jpg",
-      color: "bg-[#D9D9D933]",
+      color: "bg-[#D9D9D9]",
     },
     {
       name: "Network Solution",
       description:
         "Providing secure and reliable networking solutins including LAN, WAN and Wireless networking services.",
       image: "/network-solution.jpeg",
-      color: "bg-[#D9D9D933]",
+      color: "bg-[#D9D9D9]",
     },
     {
       name: "IT Consulting",
