@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
@@ -11,7 +11,9 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <header>
+        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      </header>
       <Hero />
       <Clients />
       <Services />

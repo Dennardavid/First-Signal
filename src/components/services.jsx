@@ -4,21 +4,21 @@ export default function Services() {
       title: "Fibre Optics",
       description:
         "Designing, building and maintaing the technology systems and frame work that supports business operation",
-      image: "/cables.png",
+      image: "/fibre.jpg",
       color: "bg-[#D9D9D933]",
     },
     {
       title: "CCTV Surveillance",
       description:
         "Installing closed-circuit television cameras to monitor and record activities in specific areas for security purpose",
-      image: "/cctv.png",
+      image: "/cctvinstall.jpg",
       color: "bg-[#5FC2947D]",
     },
     {
       title: "Network Solutions",
       description:
         "Creating a range of services, technologies and strategies designed to manage and optimize your company’s network infrastracture",
-      image: "/codeguy.png",
+      image: "/network.jpg",
       color: "bg-[#FDF0D5B2]",
     },
   ];
@@ -36,11 +36,11 @@ export default function Services() {
                 Book Service
               </button>
             </div>
-            <div>
+            <div className="md:w-[350px] h-[200px] xl:h-[400px]">
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-[500px]"
+                className="w-full h-full object-cover rounded-xl"
               />
             </div>
           </div>

@@ -20,9 +20,9 @@ export default function Whoweare() {
           </button>
         </div>
         <img
-          src="who-we-are.png"
+          src="about.jpg"
           alt="three men with a fibre cable"
-          className="xl:w-[650px]"
+          className="xl:w-[700px] rounded-xl"
         />
       </section>
       <section className="xl:mt-20">

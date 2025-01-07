@@ -50,7 +50,7 @@ export default function CompanyValues() {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto p-4 lg:p-8">
+    <section className="w-full max-w-7xl mx-auto p-4 lg:p-8">
       <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-6 space-y-4 lg:space-y-0">
         {values.map((value) => (
           <div key={value.title} className="flex group">
@@ -130,6 +130,6 @@ export default function CompanyValues() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

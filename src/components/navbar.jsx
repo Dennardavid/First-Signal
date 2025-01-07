@@ -66,8 +66,8 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
   ];
 
   return (
-    <nav className="bg-[#FDF0D5B2] sticky top-0 shadow-sm z-50 backdrop-blur-md">
-      <div className="px-4 md:px-8 py-2 w-full max-w-[1440px] mx-auto flex justify-between items-center">
+    <nav className="bg-[#fdf0d5da] sticky top-0 shadow-sm z-50 backdrop-blur-md">
+      <div className="px-4 md:px-8 py-2 w-full max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/">
           <img
             src="/logo.png"

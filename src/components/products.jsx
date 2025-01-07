@@ -2,6 +2,14 @@ import React from "react";
 
 export default function Products() {
   const products = [
+
+    {
+      name: "IT infrastructure Development",
+      description:
+        "Designing and implementing robust IT infrastructure that supports business operations and scalability.",
+      image: "/infrastructure.jpeg",
+      color: "bg-[#D9D9D9]",
+    },
     {
       name: "Fibre Optics",
       description:
@@ -14,14 +22,14 @@ export default function Products() {
       description:
         "Providing secure and reliable networking solutins including LAN, WAN and Wireless networking services.",
       image: "/network-solution.jpeg",
-      color: "bg-[#D9D9D9]",
+      color: "bg-[#FDF0D5B2]",
     },
     {
       name: "IT Consulting",
       description:
         "providing expert advice and strategies to help businesses make informed technology desisions.",
       image: "/consulting.jpeg",
-      color: "bg-[#5FC2947D]",
+      color: "bg-[#FDF0D5B2]",
     },
     {
       name: "CCTV Survelliance",
@@ -30,19 +38,13 @@ export default function Products() {
       image: "/cctvinstall.jpg",
       color: "bg-[#5FC2947D]",
     },
-    {
-      name: "IT infrastructure Development",
-      description:
-        "Designing and implementing robust IT infrastructure that supports business operations and scalability.",
-      image: "/infrastructure.jpeg",
-      color: "bg-[#FDF0D5B2]",
-    },
+    
     {
       name: "IT Executive Training",
       description:
         "Designing, building and maintaing the technology systems and frame work that supports business operation",
       image: "/training.jpg",
-      color: "bg-[#FDF0D5B2]",
+      color: "bg-[#5FC2947D]",
     },
   ];
 

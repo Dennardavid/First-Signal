@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="flex flex-col items-center text-center mt-5 xl:mt-10">
-      <h1 className="text-2xl w-[300px] md:text-5xl xl:text-7xl font-bold xl:w-[850px]">
+      <h1 className="text-2xl w-[300px] md:text-5xl xl:text-7xl font-bold xl:w-[850px] xl:leading-tight">
         We are First Signal Global Services limited
       </h1>
       <p className="text-sm w-[350px] xl:text-lg xl:w-[750px] mt-4">
