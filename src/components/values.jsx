@@ -50,10 +50,10 @@ export default function CompanyValues() {
   };
 
   return (
-    <section className="w-full max-w-7xl mx-auto p-4 lg:p-8">
-      <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-6 space-y-4 lg:space-y-0">
+    <section className="w-full mx-auto p-4 lg:p-8 text-[#0A1540]">
+      <div className="flex flex-col items-center justify-center max-w-lg mx-auto lg:max-w-screen-lg lg:flex-row lg:justify-center lg:space-x-6 space-y-4 lg:space-y-0">
         {values.map((value) => (
-          <div key={value.title} className="flex group">
+          <div key={value.title} className="flex group bg-green-500 md:w-[85%]">
             <button
               onClick={() => handleValueClick(value.title)}
               className="w-full lg:w-auto flex flex-col lg:flex-row items-center transition-all duration-300 rounded-lg relative lg:h-[500px]"
