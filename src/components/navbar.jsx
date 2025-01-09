@@ -84,7 +84,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
                 <li className="group">
                   {url.label}
                   <div
-                    className={`bg-[#000000a4] h-[2px] ${
+                    className={`bg-[#0A1540] h-[2px] ${
                       isActiveLink(url.path)
                         ? "w-full"
                         : "w-0 group-hover:w-full"

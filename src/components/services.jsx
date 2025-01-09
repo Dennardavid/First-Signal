@@ -27,8 +27,8 @@ export default function Services() {
       {Services.map((service) => (
         <div key={service.title} className={`w-full ${service.color}`}>
           <div className="px-4 md:px-8 xl:px-0 py-6 w-full max-w-screen-xl mx-auto flex flex-col-reverse gap-3 md:flex-row justify-between items-center">
-            <div className="flex flex-col gap-4 xl:gap-8 text-center md:text-left xl:w-[700px]">
-              <h2 className="font-semibold text-xl xl:text-3xl">{service.title}</h2>
+            <div className="flex flex-col gap-4 xl:gap-6 text-center md:text-left xl:w-[700px]">
+              <h2 className="text-[#0A1540] font-semibold text-xl xl:text-3xl">{service.title}</h2>
               <p className="text-[#000033] lg:w-[75%] xl:w-[60%] text-sm md:text-base xl:text-lg">
                 {service.description}
               </p>

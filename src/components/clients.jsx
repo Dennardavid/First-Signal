@@ -12,7 +12,7 @@ export default function Clients() {
 
   return (
     <section className="my-5 xl:my-10 flex flex-col items-center justify-center">
-      <h2 className="text-2xl xl:text-4xl font-bold text-center mb-4 xl:mb-6">Our Clients</h2>
+      <h2 className="text-2xl xl:text-4xl font-bold text-center mb-4 xl:mb-6 text-[#0A1540]">Our Clients</h2>
       <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
         <div className="flex animate-slide">
           {/* First set of images */}
