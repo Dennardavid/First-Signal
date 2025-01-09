@@ -26,10 +26,10 @@ export default function Services() {
     <section className="flex flex-col items-center">
       {Services.map((service) => (
         <div key={service.title} className={`w-full ${service.color}`}>
-          <div className="px-4 md:px-8 py-6 w-full max-w-[1440px] mx-auto flex flex-col-reverse gap-3 md:flex-row justify-between items-center">
-            <div className="flex flex-col gap-4 xl:gap-8 text-center md:text-left ">
+          <div className="px-4 md:px-8 xl:px-0 py-6 w-full max-w-screen-xl mx-auto flex flex-col-reverse gap-3 md:flex-row justify-between items-center">
+            <div className="flex flex-col gap-4 xl:gap-8 text-center md:text-left xl:w-[700px]">
               <h2 className="font-semibold text-xl xl:text-3xl">{service.title}</h2>
-              <p className="text-[#000033] lg:w-[75%] xl:w-[50%] text-sm md:text-base xl:text-lg">
+              <p className="text-[#000033] lg:w-[75%] xl:w-[60%] text-sm md:text-base xl:text-lg">
                 {service.description}
               </p>
               <button className="text-white bg-[#335CAD] mx-auto md:mx-0 xl:mx-0 rounded-md w-[200px] py-2 text-sm md:text-base xl:text-lg hover:bg-[#2a4b8d] transition-colors">

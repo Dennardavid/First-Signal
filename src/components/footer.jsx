@@ -1,3 +1,5 @@
+import { FaPhone } from "react-icons/fa6";
+
 export default function Footer() {
   return (
     <footer>
@@ -6,10 +8,10 @@ export default function Footer() {
           Block 12, Road 26, Federal Housing Estate, Woji Port Harcourt Rivers
           State
         </h3>
-        <div className="flex flex-col md:flex-row gap-3 text-sm mt-4 items-center justify-center xl:gap-5 xl:text-lg xl:mt-10">
-          <p>+234(0)703 6888 949</p>
-          <p>+234(0)705 7201 140</p>
-          <p>+234(0)812 8959 535</p>
+        <div className="flex flex-col md:flex-row gap-3 text-sm mt-4 justify-center xl:gap-5 xl:text-lg xl:mt-10">
+          <p className="flex items-center justify-between gap-1"><FaPhone color="#0A1540"/> +234(0)703 6888 949</p>
+          <p className="flex items-center justify-between gap-1"><FaPhone color="#0A1540"/> +234(0)705 7201 140</p>
+          <p className="flex items-center justify-between gap-1"><FaPhone color="#0A1540"/> +234(0)812 8959 535</p>
         </div>
       </section>
       <section className="bg-[#0A1540] text-white ">
