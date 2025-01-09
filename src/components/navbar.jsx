@@ -67,7 +67,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
 
   return (
     <nav className="bg-[#fdf0d5da] sticky top-0 shadow-sm z-50 backdrop-blur-md">
-      <div className="px-4 md:px-8 py-2 w-full max-w-7xl mx-auto flex justify-between items-center">
+      <div className="px-4 md:px-8 py-2 xl:px-0 w-full max-w-screen-xl mx-auto flex justify-between items-center">
         <Link href="/">
           <img
             src="/logo.png"
@@ -77,8 +77,8 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:block pr-9">
-          <ul className="flex items-center gap-8 xl:gap-16 text-lg xl:text-xl font-medium text-[#000000a4]">
+        <div className="hidden lg:block">
+          <ul className="flex items-center gap-8 xl:gap-16 text-base font-medium text-[#000000a4]">
             {URLs.map((url, index) => (
               <Link href={url.path} key={index}>
                 <li className="group">
@@ -119,7 +119,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
                   ref={(el) => (navItemsRef.current[index] = el)}
                   key={index}
                 >
-                  <li className="group text-[#000000a4] text-xl">
+                  <li className="group text-[#000000a4] text-md font-medium">
                     {url.label}
                     <div
                       className={`bg-[#000000a4] h-[2px] ${

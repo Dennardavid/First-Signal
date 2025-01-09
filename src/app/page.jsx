@@ -11,9 +11,7 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <header>
-        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      </header>
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Hero />
       <Clients />
       <Services />

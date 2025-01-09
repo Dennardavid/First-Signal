@@ -8,10 +8,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        md: "768px" /* Tablet */,
         lg: "1024px" /* Laptop */,
-        xl: "1232px" /* Large Screens */,
-        "2xl": "1390px" /*Very Large Screens */,
+        xl: "1200px" /* Large Screens */,
       },
     },
   },
