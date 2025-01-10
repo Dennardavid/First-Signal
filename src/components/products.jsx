@@ -49,7 +49,7 @@ export default function Products() {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-5 xl:py-12">
+    <section className="container mx-auto px-4 lg:px-6 xl:px-0 py-5 xl:py-12 text-[#0A1540] w-full max-w-screen-xl">
       <h1 className="text-2xl xl:text-4xl font-bold text-center mb-3 xl:mb-12">
         Services we Offer
       </h1>
@@ -60,13 +60,13 @@ export default function Products() {
             className={`${product.color} rounded-xl p-4 xl:p-6 flex flex-col md:flex-row items-center gap-4 xl:gap-6`}
           >
             <div className="flex-1 flex flex-col items-center xl:items-start space-y-2 xl:space-y-4">
-              <h2 className="text-xl xl:text-3xl text-center xl:text-left font-bold">
+              <h2 className="text-xl xl:text-3xl text-center lg: font-bold">
                 {product.name}
               </h2>
-              <p className="text-sm xl:text-lg text-center xl:text-left">
+              <p className="text-sm md:text-base xl:text-lg text-center lg:text-left">
                 {product.description}
               </p>
-              <button className="text-white bg-[#335CAD] rounded-md w-[200px] py-2 text-sm xl:text-lg hover:bg-[#2a4b8d] transition-colors">
+              <button className="text-white bg-[#335CAD] rounded-md w-[200px] py-2 text-sm md:text-base xl:text-lg hover:bg-[#2a4b8d] transition-colors">
                 Contact Us
               </button>
             </div>

@@ -53,7 +53,7 @@ export default function CompanyValues() {
     <section className="w-full mx-auto p-4 lg:p-8 text-[#0A1540]">
       <div className="flex flex-col items-center justify-center max-w-lg mx-auto lg:max-w-screen-lg lg:flex-row lg:justify-center lg:space-x-6 space-y-4 lg:space-y-0">
         {values.map((value) => (
-          <div key={value.title} className="flex group bg-green-500 md:w-[85%]">
+          <div key={value.title} className="flex group">
             <button
               onClick={() => handleValueClick(value.title)}
               className="w-full lg:w-auto flex flex-col lg:flex-row items-center transition-all duration-300 rounded-lg relative lg:h-[500px]"
@@ -61,7 +61,7 @@ export default function CompanyValues() {
             >
               {/* Mobile Layout */}
               <div className="lg:hidden flex flex-col w-full text-center">
-                <div className="p-4 font-bold text-xl">{value.title}</div>
+                <h1 className="p-4 font-bold text-xl">{value.title}</h1>
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out w-full
                   ${
@@ -70,7 +70,7 @@ export default function CompanyValues() {
                       : "max-h-0 opacity-0 p-0"
                   }`}
                 >
-                  <div className="text-sm xl:text-lg">{value.description}</div>
+                  <p className="text-sm xl:text-lg">{value.description}</p>
                 </div>
               </div>
 
@@ -82,45 +82,51 @@ export default function CompanyValues() {
                       className={`overflow-hidden transition-all duration-300 ease-in-out
                       ${
                         activeValue === value.title
-                          ? "w-[600px] opacity-100"
+                          ? "lg:w-[350] xl:w-[620px] opacity-100"
                           : "w-0 opacity-0"
                       }`}
                     >
-                      <div className="p-8 h-full flex items-center text-xl text-right">
-                        {value.description}
+                      <div className="p-8 h-full flex flex-col items-end md:text-lg xl:text-xl text-right">
+                        <h1 className="font-bold md:text-2xl xl:text-3xl mb-4">{value.title}</h1>
+                        <p className="lg:text-base xl:text-lg">{value.description}</p>
                       </div>
                     </div>
-                    <div
-                      className="p-8 font-bold text-4xl"
-                      style={{
-                        writingMode: "vertical-rl",
-                        textOrientation: "mixed",
-                      }}
-                    >
-                      {value.title}
-                    </div>
+                    {activeValue !== value.title && (
+                      <div
+                        className="p-8 font-bold md:text-3xl xl:text-4xl"
+                        style={{
+                          writingMode: "vertical-rl",
+                          textOrientation: "mixed",
+                        }}
+                      >
+                        {value.title}
+                      </div>
+                    )}
                   </>
                 ) : (
                   <>
-                    <div
-                      className="p-8 font-bold text-4xl"
-                      style={{
-                        writingMode: "vertical-rl",
-                        textOrientation: "mixed",
-                      }}
-                    >
-                      {value.title}
-                    </div>
+                    {activeValue !== value.title && (
+                      <div
+                        className="p-8 font-bold md:text-3xl xl:text-4xl"
+                        style={{
+                          writingMode: "vertical-rl",
+                          textOrientation: "mixed",
+                        }}
+                      >
+                        {value.title}
+                      </div>
+                    )}
                     <div
                       className={`overflow-hidden transition-all duration-300 ease-in-out
                       ${
                         activeValue === value.title
-                          ? "w-[600px] opacity-100"
+                          ? "lg:w-[350] xl:w-[620px] opacity-100"
                           : "w-0 opacity-0"
                       }`}
                     >
-                      <div className="p-8 h-full flex items-center text-left text-xl">
-                        {value.description}
+                      <div className="p-8 h-full flex flex-col items-start md:text-lg xl:text-xl text-left">
+                        <h1 className="font-bold md:text-2xl xl:text-3xl mb-4">{value.title}</h1>
+                        <p className="lg:text-base xl:text-lg">{value.description}</p>
                       </div>
                     </div>
                   </>

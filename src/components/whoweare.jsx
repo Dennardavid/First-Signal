@@ -16,7 +16,7 @@ export default function Whoweare() {
               solutions that enhance business efficiency, improve communications
               and drive digital transformation.
             </p>
-            <button className="w-full lg:w-auto px-8 py-2 text-sm xl:text-lg mt-4 text-white bg-[#335CAD] rounded-md hover:bg-[#2a4b8d] transition-colors">
+            <button className="w-full px-8 py-2 text-sm xl:text-lg mt-4 text-white bg-[#335CAD] rounded-md hover:bg-[#2a4b8d] transition-colors">
               Contact Us
             </button>
           </div>
@@ -30,14 +30,14 @@ export default function Whoweare() {
         </div>
       </section>
 
-      <section className="mt-8 lg:mt-16">
-        <h2 className="text-2xl lg:text-4xl font-bold text-center text-[#0A1540] mb-8">
+      <section className="mt-2 lg:mt-8">
+        <h2 className="text-2xl lg:text-4xl font-bold text-center text-[#0A1540] mb-2">
           Our Values
         </h2>
         <CompanyValues />
       </section>
 
-      <section className="mt-8 lg:mt-16">
+      <section className="mt-2">
         <Missions />
       </section>
     </>
