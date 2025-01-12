@@ -4,7 +4,7 @@ import Missions from "./missions";
 export default function Whoweare() {
   return (
     <>
-      <section className="px-4 py-6 w-full max-w-screen-xl mx-auto">
+      <section className="px-4 py-5 w-full max-w-screen-xl mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 xl:gap-12">
           <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
             <h1 className="text-[#0A1540] text-2xl md:text-5xl xl:text-7xl font-bold leading-tight xl:leading-snug">
@@ -30,14 +30,14 @@ export default function Whoweare() {
         </div>
       </section>
 
-      <section className="mt-2 lg:mt-8">
-        <h2 className="text-2xl lg:text-4xl font-bold text-center text-[#0A1540] mb-2">
+      <section className="mt-2 lg:mt-8 bg-[#0F1E5A]">
+        <h2 className="text-2xl lg:text-4xl font-bold text-center text-[#CCD6EB] pt-5">
           Our Values
         </h2>
         <CompanyValues />
       </section>
 
-      <section className="mt-2">
+      <section className="mt-5">
         <Missions />
       </section>
     </>

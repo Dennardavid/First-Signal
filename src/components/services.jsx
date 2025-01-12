@@ -23,7 +23,7 @@ export default function Services() {
     },
   ];
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center pb-4">
       {Services.map((service) => (
         <div key={service.title} className={`w-full ${service.color}`}>
           <div className="px-4 md:px-8 xl:px-0 py-6 w-full max-w-screen-xl mx-auto flex flex-col-reverse gap-3 md:flex-row justify-between items-center">
