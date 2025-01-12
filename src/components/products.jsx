@@ -49,8 +49,8 @@ export default function Products() {
   ];
 
   return (
-    <section className="container mx-auto px-4 lg:px-6 xl:px-0 py-5 xl:py-12 text-[#0A1540] w-full max-w-screen-xl">
-      <h1 className="text-2xl xl:text-4xl font-bold text-center mb-3 xl:mb-12">
+    <section className="container mx-auto px-4 lg:px-0 py-5 text-[#0A1540] w-full max-w-screen-xl ">
+      <h1 className="text-2xl xl:text-4xl font-bold text-center mb-3 xl:mb-10">
         Services we Offer
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-8">
