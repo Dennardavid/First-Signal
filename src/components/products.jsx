@@ -6,7 +6,7 @@ export default function Products() {
       name: "IT infrastructure Development",
       description:
         "Designing and implementing robust IT infrastructure that supports business operations and scalability.",
-      image: "/infrastructure.jpeg",
+      image: "/infrastructure.jpg",
       color: "bg-[#D9D9D9]",
     },
     {
@@ -20,7 +20,7 @@ export default function Products() {
       name: "Network Solution",
       description:
         "Providing secure and reliable networking solutins including LAN, WAN and Wireless networking services.",
-      image: "/network-solution.jpeg",
+      image: "/network-solution.jpg",
       color: "bg-[#FDF0D5B2]",
     },
     {

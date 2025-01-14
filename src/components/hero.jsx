@@ -9,7 +9,7 @@ export default function Hero() {
         Connecting Networks, Simplifying Work, and Driving Growth
       </p>
       <button className="text-white bg-[#335CAD] mt-2 lg:mt-4 mx-auto md:mx-0 xl:mx-0 rounded-md w-[80%] lg:w-[500px] xl:w-[550px] py-2 text-sm md:text-base xl:text-lg hover:bg-[#2a4b8d] transition-colors">Contact Us</button>
-      <img src="/hero.png" alt="Network cables" className="w-[90%] md:w-[80%] lg:w-[60%] xl:w-[65%] mt-5 " />
+      <img src="/hero.jpg" alt="Network cables" className="w-[90%] md:w-[80%] lg:w-[60%] xl:w-[65%] mt-5 rounded-2xl" />
       <div className="bg-[#0F1E5A] text-white pt-5 pb-5 xl:pt-10 xl:pb-10 -mt-16 xl:-mt-48 w-[100%] flex items-center flex-col">
         <h2 className="text-2xl w-[85%] md:w-[70%] md:text-3xl xl:text-5xl font-bold xl:w-[1000px] text-[#CCD6EB] xl:leading-snug">Unleash Your Business potential with smart tech solutions</h2>
         <p className="text-sm w-[90%] md:w-[80%] md:text-base xl:w-[750px] mt-3 lg:mt-5 xl:leading-7 xl:text-lg">
