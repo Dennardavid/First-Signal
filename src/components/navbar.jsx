@@ -78,7 +78,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
 
         {/* Desktop Menu */}
         <div className="hidden lg:block">
-          <ul className="flex items-center gap-8 xl:gap-16 text-base font-medium text-[#000000a4]">
+          <ul className="flex items-center gap-8 xl:gap-16 text-base font-medium text-[#0A1540]">
             {URLs.map((url, index) => (
               <Link href={url.path} key={index}>
                 <li className="group">
