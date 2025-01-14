@@ -4,11 +4,8 @@ import "./globals.css";
 const inter = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata = {
-  title: "First Signal Global Services",
-  description:
-    "An ICT company that transforms your business by Improving Communication, Connecting Networks, Simplifying Work, and Driving Growth",
   icons: {
-    icon: "/logo.png",
+    icon: "/logo.webp",
   },
   openGraph: {
     title: "First Signal Global Services",

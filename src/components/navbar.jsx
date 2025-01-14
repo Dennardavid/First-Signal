@@ -70,7 +70,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
       <nav className="px-4 md:px-8 py-2 xl:px-0 w-full max-w-screen-xl mx-auto flex justify-between items-center">
         <Link href="/">
           <img
-            src="/logo.png"
+            src="/logo.webp"
             alt="First Signal Logo"
             className="w-14 md:w-24"
           />
