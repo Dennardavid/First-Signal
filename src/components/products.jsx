@@ -13,7 +13,7 @@ export default function Products() {
       name: "Fibre Optics",
       description:
         "Designing and impelementing fiber optics network to support and make clients buinsess flexible and efficient",
-      image: "/fibreoptics.jpg",
+      image: "/cables.jpg",
       color: "bg-[#D9D9D9]",
     },
     {
